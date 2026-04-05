@@ -27,63 +27,37 @@ h1, h2, h3 {
 
 /* ===== NAVBAR ===== */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 40px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.9);
 
+  position: sticky;
+  top: 0;
   z-index: 1000;
 }
 
-/* LOGO */
-.logo img {
-  height: 40px;
-  width: auto;
-  display: block;
-  transition: 0.3s;
+.navbar h1 {
+  font-family: 'Playfair Display', serif;
+  color: gold;
 }
 
-.logo img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 6px rgba(255,215,0,0.4));
-}
-
-/* NAV LINKS */
-.nav-links {
+.navbar ul {
   display: flex;
-  gap: 25px;
   list-style: none;
+  gap: 25px;
 }
 
-.nav-links a {
+.navbar a {
   color: white;
   text-decoration: none;
-  position: relative;
   transition: 0.3s;
 }
 
-/* underline animation */
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: gold;
-  left: 0;
-  bottom: -5px;
-  transition: 0.3s;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
+.navbar a:hover {
+  color: gold;
 }
 
 /* ===== HERO ===== */
