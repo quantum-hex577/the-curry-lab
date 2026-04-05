@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
 
-  background: url('../images/hero.jpg') no-repeat center center fixed;
+  background: url('/images/hero.jpg') no-repeat center center fixed;
   background-size: cover;
 
   background-attachment: fixed;
